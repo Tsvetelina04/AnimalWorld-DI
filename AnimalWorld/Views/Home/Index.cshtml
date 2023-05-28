@@ -1,8 +1,102 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<div class="welcome">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+     @*Indicators/dots*@ 
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+     @*The slideshow/carousel*@ 
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img id="img1" src="~/images/kotkaqde111.jpg" alt="First slide" width="200" height="650" class="d-block w-100">
+            <div class="carousel-caption">
+                <h1 class="heading">Зоо магазин "AnimalWorld"</h1>
+                <p>Добре дошли!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img id="img2" src="~/images/kucheqdezahome.jpg" alt="Second slide" width="200" height="650" class="d-block w-100">
+            <div class="carousel-caption">
+                <h2 class="heading">Зa нac e вaжнo ocвeн мaгaзин c пpoдyĸти, дa нaмepитe в нaшe лицe eдин пpиятeл,  ĸoйтo  e нa paзпoлoжeниe зa Bac и ce cтpeми дa Bи пoмoгнe в oтглeждaнeто на вашия питомец.<
+                </h2>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img id="img3" src="~/images/oblechenikuchetazahomepage1.jpg" alt="Third slide" width="200" height="650" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3 class="heading">Приятно пазаруване!</h3>
+            </div>
+        </div>
+    </div>
+
+     @*Left and right controls/icons*@ 
+    <button class="carousel-control-prev" href="#carouselExampleIndicators" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Prev</span>
+    </button>
+    <button class="carousel-control-next" href="#carouselExampleIndicators" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+    </div>
+
 </div>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="promo-area">
+        <hr style="border:10px; height:2px; color:grey" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-refresh fa-2x promo1"></i>
+                        <p style="padding-top:20px;">НАЙ-ВИСОКО КАЧЕСТВО ПРОДУКТИ</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-truck fa-2x promo1"></i>
+                        <p style="padding-top:20px;">ДОСТЪПНИ ЦЕНИ</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-user fa-2x promo1"></i>
+                        <p style="padding-top:20px;">ОГРОМНО РАЗНООБРАЗИЕ</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-promo">
+                        <i class="fa fa-lock fa-2x promo1"></i>
+                        <p style="padding-top:20px;">ЛЕСНА И БЪРЗА ПОРЪЧКА</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="border:10px; color:grey; height:2px;" />
+        </div>
+    </div>
+
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Как да се свържете с нас:</h2>
+        <hr style="border:1px;" />
+        <div class="w3-row w3-padding-32" id="contact">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-envelope" style="width:30px"></i>Пишете ни на еmail: animalworld1@abv.bg<br>
+                <i class="fa fa-phone" style="width:30px"></i> Обадете се на телефон: +359 535353531<br>
+                <i class="fa fa-map-marker" style="width:30px"> </i>Физически магазин: гр.Пловдив, ул.Патриарх Евтимий 8, България<br>
+            </div>
+        </div>
+    </div>
